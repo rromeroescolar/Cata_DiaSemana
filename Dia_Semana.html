@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function obtenerDiaSemana(){
+            let numero=prompt("Introduce un número del 1 al 7")
+            if( numero==1){
+                alert("El numero " +numero+ " constituye al día Lunes en la semana")
+            }
+            else if( numero==2){
+                alert("El numero " +numero+ " constituye al día Martes en la semana")
+            }
+            else if( numero==3){
+                alert("El numero " +numero+ " constituye al día Miércoles en la semana")
+            }
+            else if( numero==4){
+                alert("El numero " +numero+ " constituye al día Jueves en la semana")
+            }
+            else if( numero==5){
+                alert("El numero " +numero+ " constituye al día Viernes en la semana")
+            }
+            else if( numero==6){
+                alert("El numero " +numero+ " constituye al día Sábado en la semana")
+            }
+            else if( numero==7){
+                alert("El numero " +numero+ " constituye al dia Domingo en la semana")
+            }
+            else if( numero<=0){
+                alert("El numero " +numero+ " no sigue el rango pedido, no pertenece a ningun dia de la semana")
+            }
+            else(alert("No hay tantos días en una semana"))
+        }
+
+
+
+        function obtenerDiaSemana2(){
+            let numero=prompt("Introduce un número del 1 al 7")
+            if(numero>0 && numero<=7){
+                switch(numero){
+                    case 1:
+                    alert("El numero " +numero+ " constituye al día Lunes en la semana");
+                    break;
+                    case 2:
+                    alert("El numero " +numero+ " constituye al día Martes en la semana");
+                    break;
+                    case 3:
+                    alert("El numero " +numero+ " constituye al día Miércoles en la semana");
+                    break
+                    case 4:
+                    alert("El numero " +numero+ " constituye al día Jueves en la semana");
+                    break;
+                    case 5: 
+                    alert("El numero " +numero+ " constituye al día Viernes en la semana");
+                    break
+                    case 6:
+                    alert("El numero " +numero+ " constituye al día Sábado en la semana");
+                    break;
+                    case 7:
+                    alert("El numero " +numero+ " constituye al dia Domingo en la semana");
+                    break
+                }
+            }
+            else if(numero<=0){
+                alert("El numero " +numero+ " no sigue el rango pedido, no pertenece a ningun dia de la semana");
+            }
+            else(alert("No hay tantos días en una semana"))
+        }
+    </script>
+</head>
+<body>
+    <button onclick="obtenerDiaSemana()" style="background-color: rgb(186, 120, 248); border-radius: 25px; border: ridge 5px orange;"> CLICA PARA INTRODUCIR un NUMERO DEL 1 AL 7</button> <br> <br>
+    <button onclick="obtenerDiaSemana2()" style="background-color: rgb(186, 120, 248); border-radius: 25px; border: ridge 5px orange;"> CLICA PARA INTRODUCIR un NUMERO DEL 1 AL 7</button>
+</body>
+</html>
